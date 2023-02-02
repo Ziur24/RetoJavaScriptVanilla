@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculadoraInversa</title>
+</head>
+<body>
+    
+        <script>
+           
+            let operando1 = Number(prompt('Introduce el primer operando:'));
+            let operando2 = Number(prompt('Introduce el segundo operando:'));
+            let operador = prompt('Introduce el segundo operando:');
+
+            switch(operador){
+
+                case '+':
+                    alert(`La suma de las dos cantidades es: ${operando1+operando2}`);
+                break;
+                case '-':
+                    alert(`La resta de las dos cantidades es: ${operando1-operando2}`);
+                break;
+                case '*':
+                    alert(`La multiplicación de las dos cantidades es: ${operando1*operando2}`);
+                break;
+                case '/':
+                    alert(`La división de las dos cantidades es: ${operando1/operando2}`);
+                break;
+                case '^':
+                    alert(`La suma de las dos cantidades es: ${Math.pow(operando1, operando2)}`);
+                break;
+                case '%':
+                    alert(`El resto de la dicisión de las dos cantidades es: ${operando1%operando2}`);
+                break;
+
+                default:
+                    alert('El simbolo aritmético introducido no es correcto');
+            }
+
+        </script>
+
+</body>
+</html>
